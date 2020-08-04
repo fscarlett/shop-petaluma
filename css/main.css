@@ -1,0 +1,1836 @@
+/* 
+Shop Petaluma extra styles - Fox Scarlett foxscarlett.com  foxontheone@gmail.com
+
+Contents:
+
+1. reset
+typography
+ header
+ footer
+ home page
+single  (stories)
+shops page
+streets page
+
+
+
+ */
+
+
+/* main reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Noto Serif', serif; 
+  color: #818181;
+  background-color: #f9f8f7;
+}
+
+body.page {
+  margin-bottom: 0; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:hover {
+	color: #8b5e41;
+	text-decoration: underline;
+}
+
+a:hover i {
+	color: #8b5e41;
+}
+
+
+a:hover h3,
+a:hover p {
+	/*color: #8b5e41;*/
+	text-decoration: underline;
+}
+
+a:visited {
+  color: inherit; 
+}
+
+#main .entry-content a {
+  color: #00A6B2; 
+}
+
+#primary {
+  margin-bottom: 20px; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 300px;
+}
+
+i.fa {
+	font-size: 27px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif; 
+  color: #333;
+}
+
+h1 {
+	font-size: 3.8rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+p {
+	letter-spacing: 1.25px;
+}
+
+.spet-subhead {
+	font-style: italic;
+}
+
+body.search article {
+	margin-top: 20px;
+}
+
+body.search article .entry-summary {
+	margin-top: 5px;
+}
+
+/* mostly to keep long email and urls from breaking mobile */
+@media(max-width: 500px){
+	.shrink-me-15 {
+		font-size: 1.5rem;
+	}	
+}
+
+
+/* fix stuff */
+.search .type-spet_merchant .entry-summary,
+.search .type-spet_merchant .post-thumbnail
+ {
+	display: none;
+}
+
+.page-id-174 .entry-content {    /*List Your Business page*/
+	text-align: center;
+	margin-top: 100px;
+}
+
+.page-id-174 .entry-content iframe { 
+	margin-top: 60px;
+}
+
+
+/* header */
+
+header.site-header {
+	border-bottom: 1px solid #e3e0da;
+}
+
+.topbar {
+	padding: 0px 15px;
+	/*background-color: #aaa;*/
+}
+
+.topbar-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.topbar,
+.footer-nav {
+	background-color: #e3e0da;
+}
+
+
+
+.topbar .socials a {
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 27px;
+	color: #333;
+}
+
+.main-header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 15px 19px;
+	/*background-color: #fdfdfd;*/
+
+}
+
+.site-branding img.manual-logo {
+	height: 72px;
+}
+
+@media(min-width: 600px){
+	.search-wrapper {
+		display: none;
+	}
+}
+
+@media(max-width: 559px){
+	.main-navigation .search-form {
+		display: none;
+	}
+}
+
+
+/*  ===========   search icon toggle =========== */
+.site-header .search-form {
+    margin-left: 10px;
+}
+ 
+.site-header .search-field {
+    background-color: transparent;
+    background-image: url(../images/search-icon.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    margin: 11px 0 3px;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition:         width 400ms ease, background 400ms ease;
+    width: 0;
+}
+ 
+.site-header .search-field:focus {
+    background-color: #fff;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 230px;
+}
+.search-form
+.search-submit { 
+display:none;
+}
+/* ========================================= */
+
+
+.main-header .main-navigation {
+	width: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.main-navigation ul ul {
+	flex-direction: column;
+	background: #fff;
+}
+
+.main-navigation ul ul.sub-menu li {
+	padding: 0;
+}
+
+.main-navigation .menu-item {
+	font-size: 1.5rem;
+}
+
+.main-navigation ul ul a {
+	width: 270px;
+}
+
+.main-navigation ul > li > a {
+	padding: 11px 20px;
+}
+
+.main-navigation ul > li.menu-item-has-children > a {
+	padding-left: 0;
+}
+
+
+.main-navigation ul ul li:hover {
+	background: #efebe9;
+}
+
+.main-navigation a {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1.3px;
+  font-family: 'Montserrat', Arial, sans-serif; 
+	color: #333;
+}
+
+
+
+button.menu-toggle {
+	padding: 4px 7px 1px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', Arial, sans-serif;
+	background: none;
+	margin: 10px;
+	position: relative;
+  right: 30px;
+	border: none;
+}
+
+button.menu-toggle i.fa {
+	font-size: 30px;
+}
+
+@media(max-width: 767px){
+	.main-header .main-navigation {
+		display: initial;
+		/*width: 80%;*/
+		padding-left: 20px;
+	}
+
+	.main-navigation.toggled {
+		position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+	}
+
+	.main-navigation.toggled ul {
+		padding-bottom: 30px;
+}
+
+	.main-navigation.toggled ul ul {
+		/*position: initial;*/
+		box-shadow: none;
+		width: 100%;
+		padding-bottom: 15px;
+	}
+
+	.main-navigation.toggled button.menu-toggle {
+		position: relative;
+		left: 73%;
+		top: 25px;
+	}
+
+	.main-navigation.toggled #primary-menu > li > a {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+
+@media (min-width: 767px) {
+
+	#primary-menu > li {
+		margin-left: 25px;
+	}
+
+	.site-header .search-form {
+    margin-left: 40px;
+	}
+}
+
+
+
+@media(max-width: 1400px) and (min-width: 600px) {
+	nav.main-navigation {
+		margin-right: 25px;
+
+	}
+	
+}
+
+
+
+/* footer */
+
+footer li {
+	list-style-type: none;
+}
+
+.site-footer {
+	background-color: #f8f8f8;
+
+}
+
+.footer-nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	/*background-color: #aaa;*/
+	height: 77px; /*  TAKE THIS OUT WHEN NAV IS POPULATED ? */
+}
+
+
+.menu-footer-nav-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 800px;
+}
+
+#footer-menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0;
+	width: 100%;
+}
+
+#footer-menu li {
+	/*margin-left: 50px;*/
+	display: inline-block;
+}
+
+#footer-menu a {
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1.3px;
+  font-family: 'Montserrat', Arial, sans-serif; 
+	color: #333;
+}
+
+@media(max-width: 768px){
+	#footer-menu {
+		flex-direction: column;
+	}
+	#footer-menu li {
+		margin-bottom: 10px;
+	}
+	.footer-nav {
+		height: auto;
+	}
+}
+
+.big-footer-wrapper {
+	padding: 50px 10px;
+}
+
+.big-footer-column {
+	margin-bottom: 20px;
+}
+
+.big-footer p {
+	line-height: 1.5;
+	padding-right: 15%;
+}
+
+.big-footer p.no-bottom-marg {
+	margin-bottom: 0;
+}
+
+.big-footer h2 {
+	font-size: 1.75rem;
+}
+
+.site-info-wrapper {
+	padding: 40px 10px;
+	/*background-color: #ddd;*/
+
+}
+
+.site-info {
+	text-align: center;
+}
+
+.site-info img {
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.site-info a img.pda-logo {
+	height: 75px;
+	margin-right: 20px;
+}
+
+.site-info a img.pacc-logo {
+	height: 77px;
+	margin-left: 30px;
+}
+
+.site-info p {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 1.5rem;
+}
+
+footer .socials a {
+	display: inline-block;
+	margin-right: 25px;
+	font-size: 27px;
+	color: #333;
+}
+
+@media(max-width: 992px){
+	/*.big-footer p {
+	line-height: 1.8;
+	padding-right: 15%;
+}*/
+
+.big-footer p.no-bottom-marg {
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width: 767px){
+	.site-info a img.pda-logo,
+	.site-info a img.pacc-logo {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+/* badges */
+
+.spet-badge {
+	padding: 6px;
+	color: #fff;	
+	width: 170px;
+	position: absolute;
+  top: 30px;
+  right: 0;
+  text-align: center;
+	font-style: italic;
+}
+
+.spet-closed-badge {
+	background: #818181;
+}
+
+.spet-service-badge {
+	background: #333;
+	/*top: 66px;*/
+}
+
+.spet-offers-badge {
+	/*background: #A0522D;*/
+	background: #8b5e41;
+	top: 66px;
+}
+
+
+
+
+/* home page */
+
+.home #primary {
+	margin: 0;
+	padding: 0;
+}
+
+.home .content-wrapper {
+	padding: 50px 17% 50px;
+}
+
+@media (max-width: 767px){
+	.home .content-wrapper {
+		padding: 20px 10px;
+	}
+}
+
+.home .street-section {
+	padding: 60px 0 50px;
+	background-color: #efebe9;
+}
+
+@media (min-width: 576px) {
+	div.street-container {
+	    max-width: 99%;
+	}
+}
+
+@media (min-width: 1140px) {
+	div.street-container {
+	    max-width: 1140px;
+	}
+}
+
+.home .street-cards-wrapper {
+	padding: 30px 0 20px;
+}
+
+.home div.street-cards-wrapper div.merchant-card {
+	width: 50%;
+	height: 47vw;
+	padding: 10px;
+}
+
+@media(min-width: 769px){
+
+	.home div.street-cards-wrapper div.merchant-card:nth-child(3),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(4),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(5),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(10),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(11),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(12),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(17),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(18),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(19),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(25),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(26),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(27),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(32),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(33),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(34),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(39),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(40),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(41),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(46),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(47),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(48),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(53),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(54),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(55)
+	 {
+	 	width: 33.3%;
+	 	height: 32vw;
+	}
+
+	.home div.street-cards-wrapper div.merchant-card:nth-child(3) .photo-wrapper,
+	.home div.street-cards-wrapper div.merchant-card:nth-child(4) .photo-wrapper,
+	.home div.street-cards-wrapper div.merchant-card:nth-child(5) .photo-wrapper
+	 {
+	 	/*height: 370px;*/
+	}
+
+}
+
+@media(min-width: 1140px){
+
+	.home div.street-cards-wrapper div.merchant-card {
+		width: 50%;
+		height: 560px;
+	}
+
+	.home div.street-cards-wrapper div.merchant-card:nth-child(3),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(4),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(5),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(10),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(11),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(12),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(17),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(18),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(19),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(25),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(26),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(27),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(32),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(33),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(34),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(39),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(40),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(41),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(46),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(47),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(48),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(53),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(54),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(55)
+	 {
+	 	width: 33.3%;
+	 	height: 370px;
+	}
+}
+
+@media(max-width: 768px){
+	.home div.street-cards-wrapper div.merchant-card:nth-child(1),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(4),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(7),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(8),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(11),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(14),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(15),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(18),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(21),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(22),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(25),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(28),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(29),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(32),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(35),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(36),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(39),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(42),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(43),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(46),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(49),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(50),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(53),
+	.home div.street-cards-wrapper div.merchant-card:nth-child(56)
+	 {
+	 	width: 100%;
+	 	height: 98vw;
+	}
+}
+
+@media(max-width: 600px){
+	.home div.street-cards-wrapper div.merchant-card {
+	 	width: 100%;
+	 	height: 98vw;
+	}
+}
+
+.home div.street-cards-wrapper div.merchant-card .photo-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #e3e0da;
+	height: 100%;
+}
+
+.home div.street-cards-wrapper div.merchant-card .photo-wrapper a {
+	width: 100%;
+}
+
+.home div.street-cards-wrapper div.merchant-card .photo-wrapper img {
+	width: 100%;
+}
+
+.home-merchant-card-info-wrapper {
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	display: block;
+	padding: 20px 20px;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-merchant-card-info-wrapper  p,
+.home-merchant-card-info-wrapper  h3 {
+	color: #fff;
+}
+
+.home-merchant-card-info-wrapper  p {
+	font-style: italic;
+	margin: 0;
+}
+
+.explore-wrapper {
+	margin: 10px auto 30px;
+	text-align: center;
+}
+
+.explore-wrapper a {
+	padding: 12px 50px;
+	text-align: center;
+	background: #333;
+	color: #e3e0da;
+	font-family: 'Montserrat', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.explore-wrapper a:hover {
+	background: #8b5e41;
+}
+
+.explore-wrapper button {
+	padding: 12px 50px;
+	text-align: center;
+	background: #333;
+	color: #e3e0da;
+	font-family: 'Montserrat', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.explore-wrapper button:hover {
+	background: #8b5e41;
+	text-decoration: underline;
+}
+
+
+/* stories page */
+
+.page-template-page-stories #primary {
+	margin: 0;
+	padding: 0;
+}
+
+.page-template-page-stories .content-wrapper {
+	padding: 80px 0 60px;
+}
+
+.page-template-page-stories .stories-section {
+	padding: 100px 0;
+	background-color: #efebe9;
+}
+
+.stories-cards-wrapper {
+	padding: 80px 0;
+}
+
+/* single */
+
+body.single h1 {
+	font-size: 3.8rem;
+}
+
+.single #primary {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.title-section-wrapper {
+	padding-bottom: 50px;
+}
+
+p.content-type-name {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif; 
+  color: #333;
+	font-size: 4rem;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.category-name {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+  font-family: 'Montserrat', Arial, sans-serif; 
+  color: #333;
+	/*font-size: 1.75rem;*/
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+@media(max-width: 992px){
+	.category-name {
+		font-size: 1.8rem;
+	}
+}
+
+.category-bar-wrapper {
+	background-color: #e3e0da;
+	padding: 13px 10px;
+}
+
+body.single .content-wrapper {
+	padding-top: 60px;
+	padding-bottom: 50px;
+	background-color: #efebe9;
+}
+
+.featured-image-wrapper {
+	/*width: 100%;*/
+	padding: 40px 0;
+}
+
+
+.featured-image-wrapper img {
+	width: 100%;
+}
+
+.share-wrapper {
+	padding: 15px 0;
+	background-color: #e3e0da;
+}
+
+.share-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.share-container a {
+	margin-left: 8px;
+}
+
+.related-section {
+	padding: 15px 0;
+	background-color: #efebe9;
+}
+
+.related-container {
+	padding: 50px 0;
+}
+
+.related-container .row {
+	padding: 30px 0;
+}
+
+/*  merchants page */
+
+
+
+
+
+/*  single merchant  */
+
+body.single-spet_merchant #primary {
+	padding-top: 0;
+	background: #efebe9;
+}
+
+body.single-spet_merchant .content-wrapper {
+	background-color: #f9f8f7;
+}
+
+body.single-spet_merchant .content-wrapper h1 {
+	font-size: 3.8rem;
+	margin-bottom: 0;
+}
+
+@media(max-width: 992px){
+	body.single-spet_merchant .content-wrapper {
+		padding-top: 20px;
+	}
+	body.single-spet_merchant .content-wrapper h1 {
+		font-size: 3.2rem;
+		margin-bottom: 0;
+	}
+}
+
+.merchant-info-wrapper p.merchant-subhead {
+	font-style: italic;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+
+@media(max-width: 992px) and (min-width: 500px){
+	.merchant-logo-wrapper {
+		padding: 0 30% 15px;
+	}
+}
+
+@media(max-width: 500px){
+	.merchant-logo-wrapper {
+		padding: 0 30px 15px;
+	}
+	body.single-spet_merchant .content-wrapper h1 {
+			font-size: 2.8rem;
+		}
+
+}
+
+.merchant-info-wrapper p {
+	margin-bottom: 30px;
+}
+
+/*.merchant-info-wrapper .col-12 p:nth-child(6) {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 30px;
+}*/
+
+p.merchant-label {
+	margin-bottom: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+}
+
+.merchant-description {
+	padding: 25px 0;
+	/*margin-bottom: 25px;*/
+	border-bottom: 1px solid #ccc;
+}
+
+.merchant-nap-border {
+	height: 2px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.merchant-socials-wrapper {
+	padding-top: 3px;
+	padding-bottom: 25px;
+}
+
+.merchant-socials-wrapper .fa {
+	font-size: 27px;
+	padding-right: 25px;
+}
+
+.merchant-image-wrapper {
+	margin: 40px 0 0;
+	width: 100%;
+	height: 50vw;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media(min-width: 1100px){
+	.merchant-image-wrapper {
+		height: 540px;
+	}
+}
+
+.merchant-share-wrapper {
+	padding: 24px 0;
+	background-color: #e3e0da;
+}
+
+.merchant-share-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+
+
+.merchant-share-container .fa {
+	font-size: 27px;
+}
+
+.merchant-share-icons-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.merchant-share-icons-wrapper a {
+	margin-left: 30px;
+}
+
+.neighbors-wrapper {
+	padding-top: 80px;
+	padding-bottom: 60px;
+	background-color: #efebe9;
+}
+
+.neighbors-wrapper h2 {
+	font-size: 3.8rem;
+}
+
+.neighbors {
+	padding-top: 40px;
+}
+
+.neighbor-merchant-card {
+	padding: 10px;
+	height: 32vw;
+	max-height: 380px;
+}
+
+.merchant-image-mob {
+		display: none;
+	}
+
+@media(max-width: 992px) {
+	.neighbor-merchant-card {
+		padding: 10px;
+		height: auto;
+		max-height: 1000px;
+	}
+	.merchant-share-icons-wrapper {
+		padding-top: 10px;
+		
+	}
+
+}
+
+@media(max-width: 767px){
+	.merchant-share-website-wrapper {
+		display: none;
+	}
+	.merchant-share-icons-wrapper {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.merchant-share-icons-wrapper span {
+		margin-bottom: 20px;
+	}
+	.merchant-image-desk {
+		display: none;
+	}
+	.merchant-image-mob {
+		display: block;
+	}
+	.merchant-image-wrapper {
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	.merchant-logo-desk {
+		display: none;
+	}
+}
+
+.neighbor-merchant-container:hover {
+	/*border: 1px solid #8b5e41;*/
+}
+
+.neighbor-merchant-card a:hover .neighbor-learn-more {
+	/*color: #8b5e41;*/
+}
+
+/*.neighbor-merchant-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 20px 30px 10px 10px;
+	background-color: #f9f8f7;
+	box-shadow: 0 0 5px 3px #ddd;
+	height: 300px;
+}*/
+
+
+.neighbor-merchant-container {
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #e3e0da;
+	height: 100%;
+	padding: 10px;
+}
+
+.neighbor-merchant-card-info-wrapper {
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	display: block;
+	padding: 20px 20px;
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.neighbor-merchant-card-info-wrapper  p,
+.neighbor-merchant-card-info-wrapper  h3 {
+	color: #fff;
+}
+
+.neighbor-merchant-card-info-wrapper  p {
+	font-style: italic;
+	margin: 0;
+}
+
+
+
+/*.neighbor-merchant-logo-wrapper {
+	padding: 20px;
+}
+
+.neighbor-merchant-logo-wrapper img {
+	width: 100px;
+}
+
+.neighbor-merchant-info-wrapper {
+	width: 80%;
+	padding: 10px 10px 0 0;
+}
+*/
+.merchant-info-cat {
+	font-style: italic;
+}
+
+/*.neighbor-learn-more {
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+}
+
+.neighbor-learn-more:hover {
+	color: #8b5e41;
+}*/
+
+@media(max-width: 1000px) {
+
+	.merchant-share-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.neighbor-merchant-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		height: 350px;
+		padding: 5px 20px;
+	}
+
+	.neighbor-merchant-logo-wrapper {
+		padding: 0 20px;
+	}
+
+	.neighbor-merchant-info-wrapper {
+		width: 100%;
+		padding: 10px 10px 0 0;
+	}
+}
+
+@media(max-width: 600px) {
+	.neighbor-merchant-container {
+		height: 80vw;
+	}
+}
+
+/* ----------------------------------------------------- */
+/* shops page */
+
+.page-template-page-shops #primary {
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	background: #efebe9;
+}
+
+.category-bar-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.category-bar-container select {
+	text-transform: uppercase;
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.category-bar-container .spet-select {
+	display: block;
+	font-size: 16px;
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 260px;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+}
+
+.fake-select {
+	width: 78px;
+	height: 38px;
+	background-color: #fff;
+	float: left;
+}
+@media(max-width: 767px){
+	.fake-select {
+		display: none;
+	}
+	.category-bar-container .spet-select {
+		margin-top: 10px;
+	}
+	.category-bar-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+.shops-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #efebe9;
+
+}
+
+@media (min-width: 576px) {
+	div.shops-container {
+	    max-width: 99%;
+	}
+}
+
+@media (min-width: 1140px) {
+	div.shops-container {
+	    max-width: 1140px;
+	}
+}
+
+.shops {
+	padding-top: 40px;
+}
+
+/*.shops-merchant-card {
+	padding: 10px;
+	height: 33vw;
+}*/
+
+.page-template-page-shops div.shops-merchant-card {
+	width: 50%;
+	height: 47vw;
+	padding: 10px;
+}
+
+@media(min-width: 769px){
+
+	.page-template-page-shops div.shops-merchant-card:nth-child(3),
+	.page-template-page-shops div.shops-merchant-card:nth-child(4),
+	.page-template-page-shops div.shops-merchant-card:nth-child(5),
+	.page-template-page-shops div.shops-merchant-card:nth-child(10),
+	.page-template-page-shops div.shops-merchant-card:nth-child(11),
+	.page-template-page-shops div.shops-merchant-card:nth-child(12),
+	.page-template-page-shops div.shops-merchant-card:nth-child(17),
+	.page-template-page-shops div.shops-merchant-card:nth-child(18),
+	.page-template-page-shops div.shops-merchant-card:nth-child(19),
+	.page-template-page-shops div.shops-merchant-card:nth-child(24),
+	.page-template-page-shops div.shops-merchant-card:nth-child(25),
+	.page-template-page-shops div.shops-merchant-card:nth-child(26),
+	.page-template-page-shops div.shops-merchant-card:nth-child(31),
+	.page-template-page-shops div.shops-merchant-card:nth-child(32),
+	.page-template-page-shops div.shops-merchant-card:nth-child(33),
+	.page-template-page-shops div.shops-merchant-card:nth-child(38),
+	.page-template-page-shops div.shops-merchant-card:nth-child(39),
+	.page-template-page-shops div.shops-merchant-card:nth-child(40),
+	.page-template-page-shops div.shops-merchant-card:nth-child(45),
+	.page-template-page-shops div.shops-merchant-card:nth-child(46),
+	.page-template-page-shops div.shops-merchant-card:nth-child(47),
+	.page-template-page-shops div.shops-merchant-card:nth-child(52),
+	.page-template-page-shops div.shops-merchant-card:nth-child(53),
+	.page-template-page-shops div.shops-merchant-card:nth-child(54)
+	 {
+	 	width: 33.3%;
+	 	height: 32vw;
+	}
+}
+
+@media(min-width: 1140px){
+
+	.page-template-page-shops div.shops-merchant-card {
+		width: 50%;
+		height: 560px;
+	}
+
+	.page-template-page-shops div.shops-merchant-card:nth-child(3),
+	.page-template-page-shops div.shops-merchant-card:nth-child(4),
+	.page-template-page-shops div.shops-merchant-card:nth-child(5),
+	.page-template-page-shops div.shops-merchant-card:nth-child(10),
+	.page-template-page-shops div.shops-merchant-card:nth-child(11),
+	.page-template-page-shops div.shops-merchant-card:nth-child(12),
+	.page-template-page-shops div.shops-merchant-card:nth-child(17),
+	.page-template-page-shops div.shops-merchant-card:nth-child(18),
+	.page-template-page-shops div.shops-merchant-card:nth-child(19),
+	.page-template-page-shops div.shops-merchant-card:nth-child(24),
+	.page-template-page-shops div.shops-merchant-card:nth-child(25),
+	.page-template-page-shops div.shops-merchant-card:nth-child(26),
+	.page-template-page-shops div.shops-merchant-card:nth-child(31),
+	.page-template-page-shops div.shops-merchant-card:nth-child(32),
+	.page-template-page-shops div.shops-merchant-card:nth-child(33),
+	.page-template-page-shops div.shops-merchant-card:nth-child(38),
+	.page-template-page-shops div.shops-merchant-card:nth-child(39),
+	.page-template-page-shops div.shops-merchant-card:nth-child(40),
+	.page-template-page-shops div.shops-merchant-card:nth-child(45),
+	.page-template-page-shops div.shops-merchant-card:nth-child(46),
+	.page-template-page-shops div.shops-merchant-card:nth-child(47),
+	.page-template-page-shops div.shops-merchant-card:nth-child(52),
+	.page-template-page-shops div.shops-merchant-card:nth-child(53),
+	.page-template-page-shops div.shops-merchant-card:nth-child(54)
+	 {
+	 	width: 33.3%;
+	 	height: 370px;
+	}
+}
+
+@media(max-width: 768px){
+	.page-template-page-shops div.shops-merchant-card:nth-child(1),
+	.page-template-page-shops div.shops-merchant-card:nth-child(4),
+	.page-template-page-shops div.shops-merchant-card:nth-child(7),
+	.page-template-page-shops div.shops-merchant-card:nth-child(8),
+	.page-template-page-shops div.shops-merchant-card:nth-child(11),
+	.page-template-page-shops div.shops-merchant-card:nth-child(14),
+	.page-template-page-shops div.shops-merchant-card:nth-child(15),
+	.page-template-page-shops div.shops-merchant-card:nth-child(18),
+	.page-template-page-shops div.shops-merchant-card:nth-child(21),
+	.page-template-page-shops div.shops-merchant-card:nth-child(22),
+	.page-template-page-shops div.shops-merchant-card:nth-child(25),
+	.page-template-page-shops div.shops-merchant-card:nth-child(28),
+	.page-template-page-shops div.shops-merchant-card:nth-child(29),
+	.page-template-page-shops div.shops-merchant-card:nth-child(32),
+	.page-template-page-shops div.shops-merchant-card:nth-child(35),
+	.page-template-page-shops div.shops-merchant-card:nth-child(36),
+	.page-template-page-shops div.shops-merchant-card:nth-child(39),
+	.page-template-page-shops div.shops-merchant-card:nth-child(42),
+	.page-template-page-shops div.shops-merchant-card:nth-child(43),
+	.page-template-page-shops div.shops-merchant-card:nth-child(46),
+	.page-template-page-shops div.shops-merchant-card:nth-child(49),
+	.page-template-page-shops div.shops-merchant-card:nth-child(50),
+	.page-template-page-shops div.shops-merchant-card:nth-child(53),
+	.page-template-page-shops div.shops-merchant-card:nth-child(56)
+	 {
+	 	width: 100%;
+	 	height: 98vw;
+	}
+}
+
+@media(max-width: 600px){
+	.page-template-page-shops div.shops-merchant-card {
+	 	width: 100%;
+	 	height: 98vw;
+	}
+}
+
+.shops-photo-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #e3e0da;
+	height: 100%;
+}
+
+.shops-merchant-card-info-wrapper {
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	display: block;
+	padding: 20px 20px;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.shops-merchant-card-info-wrapper  p,
+.shops-merchant-card-info-wrapper  h3 {
+	color: #fff;
+}
+
+.shops-merchant-card-info-wrapper  p {
+	font-style: italic;
+	margin: 0;
+}
+
+
+/*.shops-merchant-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 20px 30px 10px 10px;
+	background-color: #f9f8f7;
+	box-shadow: 0 0 5px 3px #ddd;
+	height: 280px;
+}*/
+
+
+
+/*.shops-merchant-logo-wrapper {
+	padding: 20px;
+}
+
+.shops-merchant-logo-wrapper img {
+	width: 100px;
+}
+
+.shops-merchant-info-wrapper {
+	width: 80%;
+}
+
+.shops-learn-more {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}*/
+
+@media(max-width: 1000px) {
+
+	.merchant-share-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.shops-merchant-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		height: 430px;
+		padding: 5px 20px;
+	}
+
+	/*.shops-merchant-logo-wrapper {
+		padding: 0 20px;
+	}
+
+	.shops-merchant-info-wrapper {
+		width: 100%;
+		padding: 10px 10px 0 0;
+	}*/
+}
+
+
+/* streets page */
+
+
+.page-template-page-streets #primary {
+	margin: 0;
+	padding: 0;
+}
+
+.page-template-page-streets .content-wrapper {
+	padding: 50px 17% 50px;
+}
+
+@media (max-width: 767px){
+	.page-template-page-streets .content-wrapper {
+		padding: 20px 10px;
+	}
+}
+
+.page-template-page-streets .street-section {
+	padding: 25px 0 25px;
+	background-color: #efebe9;
+}
+
+@media (min-width: 576px) {
+	div.street-container {
+	    max-width: 99%;
+	}
+}
+
+@media (min-width: 1140px) {
+	div.street-container {
+	    max-width: 1140px;
+	}
+}
+
+.page-template-page-streets .street-cards-wrapper {
+	padding: 40px 0;
+}
+
+.page-template-page-streets div.street-cards-wrapper div.merchant-card {
+	width: 50%;
+	height: 47vw;
+	padding: 10px;
+}
+
+@media(min-width: 769px){
+
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(3),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(4),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(5),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(8),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(9),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(10),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(13),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(14),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(15),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(18),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(19),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(20),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(23),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(24),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(25),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(28),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(29),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(30),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(33),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(34),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(35),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(38),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(39),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(40)
+	 {
+	 	width: 33.3%;
+	 	height: 32vw;
+	}
+}
+
+@media(min-width: 1140px){
+
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card {
+		width: 50%;
+		height: 560px;
+	}
+
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(3),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(4),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(5),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(8),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(9),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(10),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(13),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(14),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(15),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(18),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(19),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(20),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(23),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(24),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(25),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(28),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(29),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(30),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(33),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(34),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(35),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(38),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(39),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(40)
+	 {
+	 	width: 33.3%;
+	 	height: 370px;
+	}
+}
+
+@media(max-width: 768px){
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(1),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(4),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(7),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(10),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(13),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(16),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(19),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(22),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(25),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(28),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(31),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(34),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(37),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(40),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(43),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(46),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(49),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(52),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(55),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(58),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(61),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(64),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(67),
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card:nth-child(70)
+	 {
+	 	width: 100%;
+	 	height: 98vw;
+	}
+}
+
+@media(max-width: 600px){
+	.page-template-page-streets div.street-cards-wrapper div.merchant-card {
+	 	width: 100%;
+	 	height: 98vw;
+	}
+}
+
+.page-template-page-streets div.street-cards-wrapper div.merchant-card .photo-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #e3e0da;
+	height: 100%;
+}
+
+.page-template-page-streets div.street-cards-wrapper div.merchant-card .photo-wrapper a {
+	width: 100%;
+}
+
+.page-template-page-streets div.street-cards-wrapper div.merchant-card .photo-wrapper img {
+	width: 100%;
+}
+
+.streets-merchant-card-info-wrapper {
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	display: block;
+	padding: 20px 20px;
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.streets-merchant-card-info-wrapper  p,
+.streets-merchant-card-info-wrapper  h3 {
+	color: #fff;
+}
+
+.streets-merchant-card-info-wrapper  p {
+	font-style: italic;
+	margin: 0;
+}
+
+
+
+/* test page - REMOVE    ======================================================================================================== */
+
+.page-template-page-test #primary {
+	margin: 0;
+	padding: 0;
+}
+
+.page-template-page-test .content-wrapper {
+	padding: 50px 17% 50px;
+}
+
+@media (max-width: 767px){
+	.page-template-page-test .content-wrapper {
+		padding: 20px 10px;
+	}
+}
+
+.page-template-page-test .street-section {
+	padding: 60px 0 50px;
+	background-color: #efebe9;
+}
+
+.page-template-page-test .street-cards-wrapper {
+	padding: 40px 0;
+}
+
+.page-template-page-test div.street-cards-wrapper div.merchant-card {
+	width: 50%;
+	padding: 10px;
+}
+
+.page-template-page-test div.street-cards-wrapper div.merchant-card:nth-child(3),
+.page-template-page-test div.street-cards-wrapper div.merchant-card:nth-child(4),
+.page-template-page-test div.street-cards-wrapper div.merchant-card:nth-child(5)
+ {
+ 	width: 33.3%;
+}
+
+.page-template-page-test div.street-cards-wrapper div.merchant-card:nth-child(3) .photo-wrapper,
+.page-template-page-test div.street-cards-wrapper div.merchant-card:nth-child(4) .photo-wrapper,
+.page-template-page-test div.street-cards-wrapper div.merchant-card:nth-child(5) .photo-wrapper
+ {
+ 	height: 370px;
+}
+
+.page-template-page-test div.street-cards-wrapper div.merchant-card .photo-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.page-template-page-test div.street-cards-wrapper div.merchant-card .photo-wrapper a {
+	width: 100%;
+}
+
+.page-template-page-test div.street-cards-wrapper div.merchant-card .photo-wrapper img {
+	width: 100%;
+}
+
+
